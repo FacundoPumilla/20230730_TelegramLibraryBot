@@ -1,0 +1,12 @@
+## Libreria para usar con Bot de Telegram
+
+![TELEGRAM](tg.jpg)
+
+### Modo de uso:
+- Renombrar example.config.h a `config.h`
+- Renombrar lib/TELEGRAM/example.tg_config.h a `tg_config.h`
+- Definir los datos necesarios descriptos en `config.h`
+- Definir los datos necesarios descriptos en `/lib/TELEGRAM/tg_config.h`
+- En el setup es necesario setear el tiempo ya que Telegram lo usa para definir el ultimo mensaje `configTime(-10800, 0, "pool.ntp.org")`
+- Los comandos necesarios deben incluirse desde la linea 50 de `TELEGRAM.cpp`
+- Usando como ejemplo los ya incluidos
