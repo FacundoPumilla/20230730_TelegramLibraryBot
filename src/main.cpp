@@ -25,9 +25,9 @@ void setup() {
 }
 
 void loop() {
+  tg.updates();
   unsigned long cicloStartMillis = millis();
   if (cicloStartMillis - cicloLastTime > CICLO1MINUTO) {
-    tg.updates();
     cicloLastTime = cicloStartMillis;
   }
 }
